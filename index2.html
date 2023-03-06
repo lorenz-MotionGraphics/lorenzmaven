@@ -1,0 +1,522 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>lorenztechpilot</title> 
+<meta content='width=device-width', initial-scale=1.0, maximum-scale=1.0, user-scalable=0, name='viewport'/>
+<meta name="viewport" content="width=device-width"/> <link rel="icon" type="image/x-icon" href="Folder 3D.ico"> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript"></script> <style>
+    /*navigation style*/
+.dropbtn { background-color: #FFE5B4; color: #000000; padding: 5px; border: none; cursor: pointer; border-radius: 6px; } 
+.dropbtn:hover, .dropbtn:focus { background-color: rgb(167, 219, 157);  }
+.dropdown { position: relative; opacity: 1; } .dark-mode { background-color: black; color: white; }
+.dropdown-content { display: none; opacity: 1; min-width: 100%; }
+.dropdown-content a { color: rgb(255, 200, 97); padding: 10px 10px; text-decoration: none; display: block; margin-left: 50px; background-color: none; border-radius: 5px;}
+.dropdown a:hover {background-color: none; border-radius: 5px;} .show {display: block;}
+.pointer { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none;user-select: none; }
+ table {border: 1px solid black; border-radius: 5px; } .page { border-radius: 5px; border-color: aqua; background-color: #7a7d7b;}
+.column-5 { width: 50%; float: left; box-sizing: border-box; } .border-light { border: 1px solid rgb(0, 0, 0); }
+/*end of navigation style*//*media resolution block style element*/
+@media (max-width: 1004px){
+}
+    /*background body*/
+    body {
+        background-color: white;
+    }
+    /*toggle */
+.switch { position: relative; display: inline-block; width: 60px; height: 34px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s; }
+.slider:before { position: absolute; content: ""; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: white; -webkit-transition: .4s; transition: .4s; }
+input:checked + .slider { background-color: lightgreen; } input:focus + .slider { box-shadow: 0 0 1px green;}
+
+input:checked + .slider:before { -webkit-transform: translateX(26px); -ms-transform: translateX(26px); transform: translateX(26px); } /* Rounded sliders */ .slider.round { border-radius: 34px; } .slider.round:before { border-radius: 50%; }
+</style> </head> <body onload="startTime()"> <center> <ul id="myUL"> <table style="border-color: white;"> <tr> <td>
+<h3 class="pointer" contenteditable="false">AMA Links for IT </h3>
+<p class="pointer" contenteditable="false">about: give links from AMA source's and help you from your exam that is very hard to answer, there are some dis-accuracy from answers that is why there are a lot of links that you can follow. this site is generally sorted source links for you, rather than typing what you know site  </p>
+<p class="pointer" contenteditable="false">reminder: do keep in mind that we are not responsible/helping you outside of the page.</p>
+</td> </tr> </table> </ul> </center> 
+<br />
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+<h3>24hr time format</h3>
+<h3 id="txt" style="color: green;"></h3>
+<br />
+<br />
+    <label class="switch">
+  <input type="checkbox" class="page pointer" onclick="my_Attribute()" contenteditable="false">
+  <span class="slider round" contenteditable="false"></span>
+</label>&nbsp;&nbsp;&nbsp;Dark mode toggle
+    <br /> 
+    <br />
+<div class="row"> <div class="column-5 border-light"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1st year </div> </div> <br />
+<script> function my_Attribute() { var element = document.body; element.classList.toggle("dark-mode"); } 
+</script> 
+    <br />
+<div class="dropdown">
+<button onclick="myFunctionmain()" class="dropbtn pointer" contenteditable="false" style="margin-right: 380px">&#x25BA 1st yr. 1st trimester  </button>       
+<div id="myDropdownmain" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA mathemathics in the modern world links </button>
+<div id="myDropdown" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/07/mathematics-in-modern-world.html?m=1" class="pointer"  contenteditable="false" target="_blank">&#x25E2 mathemathics in the modern world links 1 jennys blog</a>
+</div> </div> <!--&#9776--> </div> <div id="myDropdownmain2" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc1()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA purposive communication/purposive communication 1 </button>
+<div id="myDropdown1" class="dropdown-content">
+<a href="https://pdfcoffee.com/purposive-communication-prelim-midterm-pdf-free.html" class="pointer" contenteditable="false" target="_blank">&#x25E2 purposive communication 1 link 1 pdfcoffee </a>
+<a href="https://pdfcoffee.com/final-exam-purposive-com-pdf-free.html" class="pointer" contenteditable="false" target="_blank">&#x25E2 purposive communication 1 link 2 jennys blog</a>
+</div> </div> </div> <div id="myDropdownmain3" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc2()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA understanding self  </button>
+<div id="myDropdown2" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2020/10/understanding-self.html?m=1" class="pointer" contenteditable="false" target="_blank">&#x25E2 understanding self link 1 jennys blog </a>
+<a href="https://yadavashnesh.blogspot.com/2021/06/ugrd-ge6100-understanding-self-part1.html" class="pointer" contenteditable="false" target="_blank">&#x25E2 understanding self link 2 yadavashnesh blog</a>
+</div> </div> </div> <div id="myDropdownmain4" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc3()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA living in the IT era</button>
+<div id="myDropdown3" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/07/living-in-it-era.html?m=1" class="pointer" contenteditable="false" target="_blank" >&#x25E2 living in the IT era link 1 jennys blog</a>
+</div> </div> </div> <div id="myDropdownmain5" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc4()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA Computing Fundamentals</button>
+<div id="myDropdown4" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2020/01/ite6101-computing-fundamentals.html?m=1" class="pointer" contenteditable="false" target="_blank">&#x25E2 Computing Fundamentals link 1 jennys blog</a>
+</div> </div> </div> <div id="myDropdownmain9" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc8()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA Computer Programming 1</button>
+<div id="myDropdown8" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2019/07/computer-programming-1-cs201.html" class="pointer" contenteditable="false" target="_blank">&#x25E2 Computer Programming 1 link 1 jennys blog</a>
+</div> </div> </div> <div id="myDropdownmain6" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc5()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA Computer Programming 1</button>
+<div id="myDropdown5" class="dropdown-content">
+<a href="https://pdfcoffee.com/ama-answers-ite6102-computer-programming-1-pdf-free.html" class="pointer" contenteditable="false" target="_blank">&#x25E2 Computer Programming 1 link 1 </a>
+</div> </div> </div> <div id="myDropdownmain7" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc6()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA Euthenics 1 </button>
+<div id="myDropdown6" class="dropdown-content">
+<a href="https://pdfcoffee.com/euthenics-finals-2pdf-pdf-free.html" class="pointer" contenteditable="false" target="_blank">&#x25E2 Euthenics 1 link 1 pdfcoffee</a>
+</div> </div> </div> <div id="myDropdownmain8" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFunc7()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">   &#x25BA Netacad | CompTIA</button>
+<div id="myDropdown7" class="dropdown-content">
+<a href="https://infraexam.com/" class="pointer" contenteditable="false" target="_blank">&#x25E2 infraexam.com</a>
+</div> </div> </div> </div> </body> 
+    
+    <footer> <div class="dropdown">
+    
+    
+<button onclick="myFunctionmainApi()" class="dropbtn pointer" contenteditable="false">&#x25BA 1st yr. 2nd trimester </button>        
+<div id="myDropdownApi" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Computer Programming 2</button>
+<div id="myDropdownApi()" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2019/10/computer-programming-2-cs202.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Computer Programming 2 jenny's online</a>
+<a href="https://pdfcoffee.com/bl-ite-6104-lec-1926s-computer-programming-2-pdf-free.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Computer Programming 2 pdfcoffee </a>
+</div> </div> </div> </div> <div id="myDropdownApi1" class="dropdown-content"> <div class="dropdown">
+        
+<button onclick="myFuncApi1()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Data Communications and Networking 1	</button>
+        
+<div id="myDropdownApi(1)" class="dropdown-content">
+    
+<a href="https://jennysonline.blogspot.com/2019/12/data-communication-network-1.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Data Communications and Networking 1 jenny's online</a>
+        
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) main site</a>
+         
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/stl-sequential-containers-m1-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) STL Sequential Containers M1 Test
+</a>
+            
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/associative-stl-containers-m2-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Associative STL Containers M2 Test
+</a>
+              
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/non-modifying-stl-operations-m3-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Non-modifying STL Operations M3 Test
+</a>
+                
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/modifying-stl-algorithms-m4-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) modifying STL Algorithms M4 Test
+</a>
+               
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/sorting-stl-algorithms-m5-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Sorting STL Algorithms M5 Test
+</a>
+               
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/merging-stl-algorithms-m6-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) merging STL Algorithms M5 Test
+</a>
+               
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/utilities-and-functional-tools-in-stl-m7-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Utilities and Functional Tools in STL M7 Test
+</a>
+               
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/advanced-input-and-output-operations-m8-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Advanced Input and Output Operations M8 Test
+</a>
+                
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/templates-m9-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Templates M9 Test
+</a>
+                
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/advanced-c-summary-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Advanced C++ | Summary Test
+</a>  
+    
+<a href="https://infraexam.com/c-institute/cpp-advanced-programming-in-c/advanced-c-final-test/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 netacad+cisco/w data comm (c++ andvanced programming) Advanced C++ | Final Test
+</a>
+</div> 
+    </div> 
+    <div id="myDropdownApi2" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi2()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Art Appreciation		</button>            
+<div id="myDropdownApi(2)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2020/12/art-appreciation.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Art Appreciation	jenny's online</a>
+</div> </div> <div id="myDropdownApi3" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi3()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Readings in Philippine History			</button>
+<div id="myDropdownApi(3)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/03/readings-in-philippine-history.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Readings in Philippine History jenny's online		</a>
+</div> <!--3-4--> </div> <div id="myDropdownApi4" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi4()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  The Contemporary World				</button>
+<div id="myDropdownApi(4)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/02/the-contemporary-world.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 The Contemporary World jenny's online		</a>
+</div> </div><!--4-6--> <div id="myDropdownApi5" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi5()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Euthenics 2				</button>
+<div id="myDropdownApi(5)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/02/euthenics-2.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Euthenics 2 jenny's online	</a>
+</div> </div><!--6-6--> <div id="myDropdownApi6" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi6()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Calculus 1			</button>
+<div id="myDropdownApi(6)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/07/calculus-1.html?m=1" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Calculus 1	jenny's online</a>
+<a href="https://pdfcoffee.com/calculus-1-prelim-to-midterm-pdf-free.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Calculus 1 pdfcoffee prelim to midterm</a>
+</div> 
+    </div> 
+	</footer> 
+	<div text="this part of the DIV block is script's for 1st year, 3rd trimester"> </div>
+<div text="this part of the DIV block is 1st year, 3rd trimester. "> <div class="dropdown"> <div>
+<button onclick="myFunctionApi_1()" class="dropbtn pointer" contenteditable="false">&#x25BA 1st yr. 3rd trimester  </button>        
+<div id="myDropdownApi(0_1)" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi_1()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Calculus-Based Physics 1	 </button>
+<div id="myDropdownApi(0_1.2)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/07/calculus-based-physics-1.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Calculus-Based Physics 1	</a>
+</div> </div> </div> </div> </div> </div>
+<div id="myDropdownApi(0_2)" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi_2()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Physical Activities Toward Health and Fitness 1		 </button>
+<div id="myDropdownApi(0_1.3)" class="dropdown-content">
+<a href="https://www.google.com/" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Physical Activities Toward Health and Fitness 1		</a>
+</div> </div> </div>
+<div id="myDropdownApi(0_3)" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi_3()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA National Service Training Program 1			 </button>
+<div id="myDropdownApi(0_1.4)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/07/national-service-training-program-1.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 National Service Training Program 1 jenny's blog	</a>
+<a href="https://pdfcoffee.com/nstp-101-complete-amaoed-pdf-free.html" class="pointer" contenteditable="false" target="_blank">&#x25E2 National Service Training Program 1 pdfcoffee </a>
+</div> </div> </div>
+<div id="myDropdownApi(0_4)" class="dropdown-content">
+	<div class="dropdown">
+		<button onclick="myFuncApi_4()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">&#x25BA Purposive Communication 2				 </button>
+</div>
+<div id="myDropdownApi(0_1.5)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/01/purposive-communication-2.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Purposive Communication 2				</a>
+</div> 
+	</div> 
+<div id="myDropdownApi(0_5)" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi_5()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Discrete Mathematics					 </button>
+<div id="myDropdownApi(0_1.6)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/08/discrete-mathematics.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Discrete Mathematics jenny's online</a>
+<a href="https://pdfcoffee.com/discrete-prelim-pdf-free.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Discrete Mathematics pdfcoffee</a>
+</div> </div> </div>
+<div id="myDropdownApi(0_6)" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi_6()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Ethics						 </button>
+<div id="myDropdownApi(0_1.7)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/12/ethics.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Ethics					</a>
+</div> </div> </div>
+<div id="myDropdownApi(0_7)" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi_7()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Philippine Popular Culture							 </button>
+<div id="myDropdownApi(0_1.8)" class="dropdown-content">
+<a href="cloud2.BSIT_sources_links/google.com" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Philippine Popular Culture						</a>
+</div> </div> </div>
+<div id="myDropdownApi(0_8)" class="dropdown-content"> <div class="dropdown">
+<button onclick="myFuncApi_8()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Introduction to Multimedia							 </button>
+<div id="myDropdownApi(0_1.9)" class="dropdown-content">
+<a href="https://jennysonline.blogspot.com/2021/03/introduction-to-multimedia.html" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Introduction to Multimedia							</a>
+</div> 
+	</div> 
+</div> 
+<br /> 
+<div class="row"> <div class="column-5 border-light">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2nd year </div>
+        </div>
+        <br />
+        <div text="this part of the DIV block is script's for 2nd year, 1st trimester"> </div>
+<div text="this part of the DIV block is 2nd year, 1st trimester. "></div> 
+<div class="dropdown"> <div>
+<button onclick="__DEF_2ndyear_1sttrimester()" class="dropbtn pointer" contenteditable="false">&#x25BA 2nd yr. 1st trimester  </button>        
+<div id="__DEF_dropdown" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_1()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Data Communications and Networking 2 </button>
+<div id="__DEF_myDropdown" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Data Communications and Networking 2 </a>
+        </div> 
+    </div> 
+</div> 
+</div> 
+<div id="__DEF_dropdown1" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_2()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA National Service Training Program 2      </button>
+<div id="__DEF_myDropdown1" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 National Service Training Program 2     </a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown2" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_3()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Physical Activities Toward Health and Fitness 2       </button>
+<div id="__DEF_myDropdown2" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Physical Activities Toward Health and Fitness 2  </a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown3" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_4()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Calculus-Based Physics 2       </button>
+<div id="__DEF_myDropdown3" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Calculus-Based Physics 2</a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown4" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_5()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Data Structures and Algorithms      </button>
+<div id="__DEF_myDropdown4" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Data Structures and Algorithms</a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown5" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_6()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Information Management </button>
+<div id="__DEF_myDropdown5" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Information Management</a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown6" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_7()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Introduction to Human Computer Interaction      </button>
+<div id="__DEF_myDropdown6" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Introduction to Human Computer Interaction</a>
+</div> </div> </div>
+<!--2nd year 2nd trimester -->
+<div class="dropdown"> <div>
+<button onclick="__DEF_2ndyear_2ndtrimester()" class="dropbtn pointer" contenteditable="false">&#x25BA 2nd yr. 2nd trimester  </button>        
+<div id="__DEF_dropdown0" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_1()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Professional Ethics in IT/ Social & Professional I </button>
+<div id="__DEF_myDropdown0" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Professional Ethics in IT/ Social & Professional I </a>
+        </div> 
+    </div> 
+</div> 
+</div> 
+<div id="__DEF_dropdown0.1" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_2()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Data Analysis      </button>
+<div id="__DEF_myDropdown0.1" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Data Analysis     </a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown0.2" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_3()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Physical Activities Toward Health and Fitness 3      </button>
+<div id="__DEF_myDropdown0.2" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Physical Activities Toward Health and Fitness 3  </a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown0.3" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_4()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Data Communications and Networking 3       </button>
+<div id="__DEF_myDropdown0.3" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Data Communications and Networking 3</a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown0.4" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_5()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Application Development and Emerging Technologies      </button>
+<div id="__DEF_myDropdown0.4" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Application Development and Emerging Technologies</a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown0.5" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_6()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Quantitative Methods or Quantitative (Same Title) </button>
+<div id="__DEF_myDropdown0.5" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Quantitative Methods or Quantitative (Same Title)</a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown0.6" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_7()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Information Assurance and Security 1      </button>
+<div id="__DEF_myDropdown0.6" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Information Assurance and Security 1</a>
+</div> </div> </div>
+
+<div id="__DEF_dropdown0.7" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_8()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Database Management System 1      </button>
+<div id="__DEF_myDropdown0.7" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Database Management System 1</a>
+</div> </div> </div>
+<!--2nd year-3rd trimester-->
+<div class="dropdown"> <div>
+<button onclick="__DEF_2ndyear_3rdtrimester()" class="dropbtn pointer" contenteditable="false">&#x25BA 2nd yr. 3rd trimester  </button>        
+<div id="__DEF_dropdown0.1.1" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_1_1()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA  Advanced Database Management Systems </button>
+<div id="__DEF_myDropdown0.1.1" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Advanced Database Management Systems </a>
+        </div> 
+    </div> 
+</div> 
+</div> 
+<div id="__DEF_dropdown0.1" class="dropdown-content"> <div class="dropdown">
+<button onclick="__DEF_0_2()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;" >   &#x25BA Data Analysis      </button>
+<div id="__DEF_myDropdown0.1" class="dropdown-content">
+<a href="#" class="pointer"  contenteditable="false" target="_blank">&#x25E2 Data Analysis     </a>
+</div> </div> </div>
+        <br />
+        <div text="this part of the DIV block is script's for 1st year, 3rd trimester"> </div>
+    
+        <div class="row"> <div class="column-5 border-light">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3rd year </div>
+        </div>
+            <br />
+            <div class="row"> <div class="column-5 border-light">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IT practicum </div>
+                
+<div> <ul> <li> for any issues with the IT links go to concerns tab to feedback us with your problem  </li>  </ul>
+</div> <div class="dropdown"> 
+<button onclick="myFunctionApi__0()" class="dropbtn pointer" contenteditable="false" style="margin-left: 38px;">&#x25BA Chief Excecucitive Officer </button>        
+<div id="myDropdownApi(0_1.1.1)" class="dropdown-content"> <div class="dropdown"> 
+<button onclick="myFuncApi_0()" class="dropbtn pointer" contenteditable="false" style="margin-left: 70px;" >   &#x25BA custom page 1     </button>
+<div id="myDropdownApi(0_1.1)" class="dropdown-content">
+<a href="http://lorenztechpilot.great-site.net/?i=1" class="pointer"  contenteditable="false" target="_blank" style="margin-left: 100px;">&#x25E2 jeraldine page   </a> 
+ </div> </div> </div> </div> <script text="3rd trimester">
+function myFunctionApi_1() { document.getElementById("myDropdownApi(0_1)").classList.toggle("show"); document.getElementById("myDropdownApi(0_2)").classList.toggle("show");
+document.getElementById("myDropdownApi(0_3)").classList.toggle("show"); document.getElementById("myDropdownApi(0_4)").classList.toggle("show"); 
+document.getElementById("myDropdownApi(0_5)").classList.toggle("show"); document.getElementById("myDropdownApi(0_6)").classList.toggle("show"); 
+document.getElementById("myDropdownApi(0_7)").classList.toggle("show"); document.getElementById("myDropdownApi(0_8)").classList.toggle("show"); }
+window.onclick = function(event) { if (!event.target.matches('.dropbtn')) { var dropdowns = document.getElementsByClassName("dropdown-content"); var i;
+for (i = 0; i < dropdowns.length; i++) { var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); } } } }
+</script> 
+    <div> 
+    <script>
+function myFunctionApi__0() { document.getElementById("myDropdownApi(0_1.1.1)").classList.toggle("show"); }
+window.onclick = function(event) { if (!event.target.matches('.dropbtn')) { var dropdowns = document.getElementsByClassName("dropdown-content"); var i;
+for (i = 0; i < dropdowns.length; i++) { 
+     var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); } } } } 
+    </script>
+    <script src="script.js"></script>
+<div>
+    <div>
+        <script>/*2nd year-1st trimester*/
+            function __DEF_2ndyear_1sttrimester() { 
+                document.getElementById("__DEF_dropdown").classList.toggle("show"); 
+                document.getElementById("__DEF_dropdown1").classList.toggle("show"); 
+                document.getElementById("__DEF_dropdown2").classList.toggle("show");
+                document.getElementById("__DEF_dropdown3").classList.toggle("show");
+                document.getElementById("__DEF_dropdown4").classList.toggle("show");
+                document.getElementById("__DEF_dropdown5").classList.toggle("show");
+                document.getElementById("__DEF_dropdown6").classList.toggle("show"); }
+window.onclick = function(event) { if (!event.target.matches('.dropbtn')) { var dropdowns = document.getElementsByClassName("dropdown-content"); var i;
+for (i = 0; i < dropdowns.length; i++) { var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); } } } }
+        </script>
+        <script>/*2nd year-2nd trimester*/
+            function __DEF_2ndyear_2ndtrimester() { 
+                document.getElementById("__DEF_dropdown0").classList.toggle("show"); 
+                document.getElementById("__DEF_dropdown0.1").classList.toggle("show"); 
+                document.getElementById("__DEF_dropdown0.2").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.3").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.4").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.5").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.6").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.7").classList.toggle("show"); }
+window.onclick = function(event) { if (!event.target.matches('.dropbtn')) { var dropdowns = document.getElementsByClassName("dropdown-content"); var i;
+for (i = 0; i < dropdowns.length; i++) { var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); } } } }
+        </script>
+        <script>
+            function __DEF_2ndyear_3rdtrimester() {  
+                document.getElementById("__DEF_dropdown0.1.1").classList.toggle("show"); 
+                document.getElementById("__DEF_dropdown0.2.2").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.3.3").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.4.4").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.5.5").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.6.6").classList.toggle("show");
+                document.getElementById("__DEF_dropdown0.7.7").classList.toggle("show"); }
+window.onclick = function(event) { if (!event.target.matches('.dropbtn')) { var dropdowns = document.getElementsByClassName("dropdown-content"); var i;
+for (i = 0; i < dropdowns.length; i++) { var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); } } } }
+        </script>
+    </div>
+      <!--
+      function myFuncApi_1() {
+        document.getElementById("myDropdownApi(0_1.2)").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      -->
+</div> </div>
+<script>const links = document.querySelectorAll("a") 
+links.forEach(link => link.addEventListener('contextmenu', event => event.preventDefault()))
+</script>
+<script> $(document).keydown(function(event){ if(event.keyCode==123){ return false; }
+else if (event.ctrlKey && event.shiftKey && event.keyCode==73){ return false; } }); $(document).on("contextmenu",function(e){ e.preventDefault(); });
+</script> 
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+<script src="script.js"></script>
+                <div>
+                    <h2>Converters</h2>
+                    <br />
+<div class="container">
+  <p>decimal: <input type="number" id="number"> = <span id="binary">0</span> in binary.</p>
+</div>
+<script type="text/javascript">
+    var decimalInput = document.querySelector("#number"); 
+var display = document.querySelector("#binary");
+
+//Convert input to binary
+function makeBinary(n) {
+  let output = '';
+  if (n != 0) {
+    let dividend = n;
+    while (dividend != 0) {
+      output = (dividend % 2) + output;
+      dividend = Math.floor(dividend/2);
+    }
+  } else { output = "0";}
+  return output;
+}
+
+//Update display
+function updateDisplay () {
+  display.textContent = makeBinary(Math.abs(decimalInput.value));
+}
+
+
+decimalInput.addEventListener("change", updateDisplay);
+decimalInput.addEventListener("click", updateDisplay);
+
+
+</script>
+
+
+
+3rd Year, 1st Term
+MAJORELECTIVE2  Major Elective 2    3   0       
+ITE6301 Technopreneurship   3   0       
+GE6300  Life and Works of Jose Rizal    3   0       
+GE6104  Gender and Society  3   0       
+CS6209  Software Engineering 1  3   0       
+CS6302  Application Lifecycle Management    3   0       
+IT6208  System Integration and Architecture 1   3   0       
+TOTAL REQUIRED UNITS: 150 TOTAL UNITS CREDITED: 
+
+3rd Year, 2nd Term
+IT6301  System Administration and Maintenance   3   0       
+IT6302  Integrative Programming and Technology 1    3   0       
+CS6303  Load Testing    3   0       
+ITE6300 Cloud Computing and Internet of Things  3   0       
+IT6398  Capstone Project 1  3   0       
+MAJORELECTIVE3  Major Elective 3    3   0       
+TOTAL REQUIRED UNITS: 168 TOTAL UNITS CREDITED: 0
+
+3rd Year, 3rd Term
+MAJORELECTIVE4  Major Elective 4    3   0       
+IT6399  IT Capstone Project 2   3   0       
+CS6306  Unified Functional Testing  3   0       
+TOTAL REQUIRED UNITS: 177 TOTAL UNITS CREDITED: 0
+4th Year, 1st Term
+IT6397B IT Practicum (486hrs)   6   0       
+                </div>
+</html>
